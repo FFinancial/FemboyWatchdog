@@ -19,6 +19,9 @@ namespace FemboyWatchdog
             {
                 components.Dispose();
             }
+
+            GlobalHooks.UnhookWindowsHookEx(_hookID);
+
             base.Dispose(disposing);
         }
 
