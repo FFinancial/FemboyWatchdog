@@ -69,6 +69,7 @@ namespace FemboyWatchdog
             lastmousemvmtTimer.Tick += new EventHandler(lastmousemvmtTimer_Tick);
 
             OpenCamera();
+            ttsTimer.Start();
         }
 
         private void lastmousemvmtTimer_Tick(object sender, EventArgs e)
@@ -184,7 +185,6 @@ namespace FemboyWatchdog
                 vsp.VideoSource = source;
                 vsp.Start();
                 this.Cursor = Cursors.Default;
-                ttsTimer.Start();
                 labelBlinkTimer.Start();
             }
             catch { }
