@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FemboyWatchdog", "FemboyWatchdog\FemboyWatchdog.csproj", "{8ABBD681-A6EA-4399-9C35-708CBCB15455}"
 EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "FemboyInstaller", "FemboyInstaller\FemboyInstaller.vdproj", "{634FABA7-DB7C-4E92-97D3-A1614CA906EA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
@@ -13,6 +15,8 @@ Global
 		{8ABBD681-A6EA-4399-9C35-708CBCB15455}.Debug|x86.Build.0 = Debug|x86
 		{8ABBD681-A6EA-4399-9C35-708CBCB15455}.Release|x86.ActiveCfg = Release|x86
 		{8ABBD681-A6EA-4399-9C35-708CBCB15455}.Release|x86.Build.0 = Release|x86
+		{634FABA7-DB7C-4E92-97D3-A1614CA906EA}.Debug|x86.ActiveCfg = Debug
+		{634FABA7-DB7C-4E92-97D3-A1614CA906EA}.Release|x86.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
