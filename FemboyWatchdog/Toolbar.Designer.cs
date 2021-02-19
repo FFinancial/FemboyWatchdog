@@ -20,6 +20,7 @@ namespace FemboyWatchdog
                 components.Dispose();
             }
 
+            CloseCurrentVideoSource();
             GlobalHooks.UnhookWindowsHookEx(_hookID);
 
             base.Dispose(disposing);

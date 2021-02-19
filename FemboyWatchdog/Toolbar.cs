@@ -2,21 +2,23 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Drawing;
+using System.Drawing.Imaging;
+using System.IO;
 using System.Media;
+using System.Net;
 using System.Runtime.InteropServices;
 using System.Speech.Synthesis;
 using System.Text;
 using System.Windows.Forms;
 using AForge.Video;
 using AForge.Video.DirectShow;
-using System.Drawing.Imaging;
-using System.IO;
 
 namespace FemboyWatchdog
 {
     public partial class Toolbar : Form
     {
         private DateTime clockIn = DateTime.Now;
+        private LocationTracker tracker;
 
         private FilterInfoCollection videoDevices;
         private VideoCaptureDevice videoDevice;
@@ -47,6 +49,8 @@ namespace FemboyWatchdog
 
             ss = new SpeechSynthesizer();
 
+            tracker = new LocationTracker();
+
             ttsTimer = new Timer();
             ttsTimer.Interval = 15000;
             labelBlinkTimer = new Timer();
@@ -67,13 +71,13 @@ namespace FemboyWatchdog
             OpenCamera();
         }
 
-        void lastmousemvmtTimer_Tick(object sender, EventArgs e)
+        private void lastmousemvmtTimer_Tick(object sender, EventArgs e)
         {
             ++mousemvmtCount;
             lastmousemvmtTimer.Stop();
         }
 
-        void mousemoveTimer_Tick(object sender, EventArgs e)
+        private void mousemoveTimer_Tick(object sender, EventArgs e)
         {
             if (mousemvmtCount < 5)
             {
@@ -121,15 +125,21 @@ namespace FemboyWatchdog
                 }
                 else
                 {
+                    /*
                     MessageBox.Show(this, "Camera device not found! Get a webcam!", "Error initializing camera", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     Environment.Exit(-2);
+                    */
+                    vsp.Dispose();
                     return;
                 }
                 videoCapabilities = videoDevice.VideoCapabilities;
                 if (videoCapabilities.Length == 0)
                 {
+                    /*
                     MessageBox.Show(this, "Camera does not support video capture! Get a better webcam!", "Error initializing camera", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     Environment.Exit(-3);
+                    */
+                    vsp.Dispose();
                     return;
                 }
 
@@ -141,19 +151,25 @@ namespace FemboyWatchdog
             }
             catch (Exception err)
             {
+                /*
                 MessageBox.Show(this, err.ToString(), "Error initializing camera", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 Environment.Exit(-1);
+                */
+                vsp.Dispose();
             }
         }
 
-        void labelBlinkTimer_Tick(object sender, EventArgs e)
+        private void labelBlinkTimer_Tick(object sender, EventArgs e)
         {
             this.label2.Visible = !this.label2.Visible;
         }
 
-        void ttsTimer_Tick(object sender, EventArgs e)
+        private void ttsTimer_Tick(object sender, EventArgs e)
         {
-            ss.SpeakAsync("You are being monitored");
+            string msg = "You are being monitored.";
+            if (tracker.LocationData != null)
+                msg += string.Format(" Your location is: {0}, {1}", tracker.LocationData.latitude, tracker.LocationData.longitude);
+            ss.SpeakAsync(msg);
         }
 
         public void OpenVideoSource(IVideoSource source)
