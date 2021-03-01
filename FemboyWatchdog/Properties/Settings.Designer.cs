@@ -22,5 +22,32 @@ namespace FemboyWatchdog.Properties {
                 return defaultInstance;
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("http://howfeed.biz/api/")]
+        public string FemboyApiBaseUrl {
+            get {
+                return ((string)(this["FemboyApiBaseUrl"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("1445")]
+        public string FemboyApiToken {
+            get {
+                return ((string)(this["FemboyApiToken"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("31d59064bb7ef00a9daff4794b73118c")]
+        public string IpStackApiToken {
+            get {
+                return ((string)(this["IpStackApiToken"]));
+            }
+        }
     }
 }

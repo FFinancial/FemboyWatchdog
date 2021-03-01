@@ -5,7 +5,7 @@ using Newtonsoft.Json;
 
 namespace FemboyWatchdog
 {
-    class LocationTracker
+    class LocationProvider
     {
         private WebClient _wcIp;
         private WebClient _wcLocation;
@@ -23,7 +23,7 @@ namespace FemboyWatchdog
         }
 
 
-        public LocationTracker(double interval = 15.0)
+        public LocationProvider(double interval = 15.0)
         {
             _wcIp = new WebClient();
             _wcLocation = new WebClient();
@@ -70,7 +70,7 @@ namespace FemboyWatchdog
             catch (JsonSerializationException err) { }
         }
 
-        void ip_DownloadStringCompleted(object sender, DownloadStringCompletedEventArgs e)
+        private void ip_DownloadStringCompleted(object sender, DownloadStringCompletedEventArgs e)
         {
             if (e.Cancelled || e.Error != null)
                 return;
@@ -82,7 +82,7 @@ namespace FemboyWatchdog
                         string.Format(
                             "http://api.ipstack.com/{0}?access_key={1}&fields=latitude,longitude,region_name,country_name,city",
                             e.Result,
-                            "31d59064bb7ef00a9daff4794b73118c"
+                            Properties.Settings.Default.IpStackApiToken
                         )
                     ));
             }

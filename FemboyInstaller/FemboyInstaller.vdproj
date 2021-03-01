@@ -93,7 +93,19 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_89C6893B8CE24B97A5B9FBE20DC47AE5"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_C7272BF4A9D24FD39D08ABB04570B03C"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_CA9E161B9664471B86DC3E674B2C3E37"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -239,7 +251,7 @@
                 {
                 "Name" = "8:.NET Framework"
                 "Message" = "8:[VSDNETMSG]"
-                "FrameworkVersion" = "8:.NETFramework,Version=v4.0,Profile=Client"
+                "FrameworkVersion" = "8:.NETFramework,Version=v3.0"
                 "AllowLaterVersions" = "11:FALSE"
                 "InstallUrl" = "8:http://go.microsoft.com/fwlink/?LinkId=131000"
                 }
@@ -422,6 +434,46 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_89C6893B8CE24B97A5B9FBE20DC47AE5"
+            {
+            "SourcePath" = "8:..\\FemboyWatchdog\\media\\beep.wav"
+            "TargetName" = "8:beep.wav"
+            "Tag" = "8:"
+            "Folder" = "8:_6CC34141C38547F1960B28776AFE013A"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_CA9E161B9664471B86DC3E674B2C3E37"
+            {
+            "SourcePath" = "8:..\\FemboyWatchdog\\media\\klaxon.wav"
+            "TargetName" = "8:klaxon.wav"
+            "Tag" = "8:"
+            "Folder" = "8:_6CC34141C38547F1960B28776AFE013A"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_EBEE36C33EDCA5A5ABEBF8285F4E5150"
             {
             "AssemblyRegister" = "3:1"
@@ -511,6 +563,17 @@
             "Property" = "8:TARGETDIR"
                 "Folders"
                 {
+                    "{9EF0B969-E518-4E46-987F-47570745A589}:_6CC34141C38547F1960B28776AFE013A"
+                    {
+                    "Name" = "8:media"
+                    "AlwaysCreate" = "11:FALSE"
+                    "Condition" = "8:"
+                    "Transitive" = "11:FALSE"
+                    "Property" = "8:_2F6493A357C84CC6A5D7796898769E45"
+                        "Folders"
+                        {
+                        }
+                    }
                 }
             }
             "{1525181F-901A-416C-8A58-119130FE478E}:_E3FA4026E3914317A7CCE3DFB7BF7A85"
@@ -562,15 +625,15 @@
         {
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:FemboyWatchdog"
-        "ProductCode" = "8:{C882488C-8174-4E3C-AC32-6152755025CE}"
-        "PackageCode" = "8:{2782296D-C54B-4CAD-8DE9-FC3459327BC4}"
+        "ProductCode" = "8:{4560E035-D9FD-4A3E-AD0C-0C92F99B2AC7}"
+        "PackageCode" = "8:{7F6425A9-589D-4803-92D1-C7C5D2F61ED5}"
         "UpgradeCode" = "8:{85E61D1C-4678-4F3E-898C-C62A75112C1A}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
         "RemovePreviousVersions" = "11:TRUE"
         "DetectNewerInstalledVersion" = "11:TRUE"
         "InstallAllUsers" = "11:TRUE"
-        "ProductVersion" = "8:1.0.0"
+        "ProductVersion" = "8:0.3.0"
         "Manufacturer" = "8:FemboyFinancial"
         "ARPHELPTELEPHONE" = "8:+1 (925) 765-8478"
         "ARPHELPLINK" = "8:http://ff.howfeed.biz/"
@@ -1081,8 +1144,8 @@
                             "Type" = "3:15"
                             "ContextData" = "8:"
                             "Attributes" = "3:0"
-                            "Setting" = "3:1"
-                            "Value" = "8:#1258"
+                            "Setting" = "3:2"
+                            "Value" = "8:Please restart your computer to finish installation."
                             "DefaultValue" = "8:#1258"
                             "UsePlugInResources" = "11:TRUE"
                             }

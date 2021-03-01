@@ -1,5 +1,15 @@
 ﻿<?xml version='1.0' encoding='utf-8'?>
-<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)">
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="FemboyWatchdog.Properties" GeneratedClassName="Settings">
   <Profiles />
-  <Settings />
+  <Settings>
+    <Setting Name="FemboyApiBaseUrl" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">http://howfeed.biz/api/</Value>
+    </Setting>
+    <Setting Name="FemboyApiToken" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">1445</Value>
+    </Setting>
+    <Setting Name="IpStackApiToken" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">31d59064bb7ef00a9daff4794b73118c</Value>
+    </Setting>
+  </Settings>
 </SettingsFile>

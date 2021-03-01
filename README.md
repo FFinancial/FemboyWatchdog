@@ -4,7 +4,7 @@ The ultimate corporate surveillance mechanism!
 
 ## User Requirements
 
-- .NET Framework 3.5
+- .NET Framework 3.0
 
 - Windows XP and up
 
