@@ -96,6 +96,12 @@
     <Compile Include="AboutBox.Designer.cs">
       <DependentUpon>AboutBox.cs</DependentUpon>
     </Compile>
+    <Compile Include="BlueScreenSpam.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BlueScreenSpam.Designer.cs">
+      <DependentUpon>BlueScreenSpam.cs</DependentUpon>
+    </Compile>
     <Compile Include="GlobalHooks.cs" />
     <Compile Include="LocationProvider.cs" />
     <Compile Include="MeetingNotification.cs">
@@ -114,14 +120,24 @@
     <Compile Include="Monitor.Designer.cs">
       <DependentUpon>Monitor.cs</DependentUpon>
     </Compile>
+    <Compile Include="SpamProvider.cs" />
     <Compile Include="Toolbar.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Toolbar.Designer.cs">
       <DependentUpon>Toolbar.cs</DependentUpon>
     </Compile>
+    <Compile Include="VinnySpam.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VinnySpam.Designer.cs">
+      <DependentUpon>VinnySpam.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="AboutBox.resx">
       <DependentUpon>AboutBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BlueScreenSpam.resx">
+      <DependentUpon>BlueScreenSpam.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MeetingNotification.resx">
       <DependentUpon>MeetingNotification.cs</DependentUpon>
@@ -141,6 +157,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Toolbar.resx">
       <DependentUpon>Toolbar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VinnySpam.resx">
+      <DependentUpon>VinnySpam.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="app.config" />
     <None Include="packages.config" />
@@ -175,6 +194,8 @@
     <Content Include="media\beep.wav">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="media\monikabsod.png" />
+    <None Include="media\bsod.png" />
     <Content Include="media\klaxon.wav">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>

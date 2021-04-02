@@ -20,6 +20,7 @@ namespace FemboyWatchdog
         private DateTime clockIn = DateTime.Now;
         
         private LocationProvider tracker;
+        private SpamProvider spammer;
 
         private FilterInfoCollection videoDevices;
         private VideoCaptureDevice videoDevice;
@@ -51,6 +52,7 @@ namespace FemboyWatchdog
             ss = new SpeechSynthesizer();
 
             tracker = new LocationProvider();
+            spammer = new SpamProvider();
 
             ttsTimer = new Timer();
             ttsTimer.Interval = 15000;

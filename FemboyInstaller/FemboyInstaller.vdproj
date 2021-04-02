@@ -22,13 +22,7 @@
         "Entry"
         {
         "MsmKey" = "8:_20E2146C791105F6934C30A65E1458CA"
-        "OwnerKey" = "8:_54602D10025C6F6766454C8F6B75F417"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_20E2146C791105F6934C30A65E1458CA"
-        "OwnerKey" = "8:_EBEE36C33EDCA5A5ABEBF8285F4E5150"
+        "OwnerKey" = "8:_5909879E9BE44DDB371A14BD798CD400"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -40,7 +34,13 @@
         "Entry"
         {
         "MsmKey" = "8:_20E2146C791105F6934C30A65E1458CA"
-        "OwnerKey" = "8:_5909879E9BE44DDB371A14BD798CD400"
+        "OwnerKey" = "8:_EBEE36C33EDCA5A5ABEBF8285F4E5150"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_20E2146C791105F6934C30A65E1458CA"
+        "OwnerKey" = "8:_54602D10025C6F6766454C8F6B75F417"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -70,13 +70,13 @@
         "Entry"
         {
         "MsmKey" = "8:_54602D10025C6F6766454C8F6B75F417"
-        "OwnerKey" = "8:_F7884CBCC5F6D4C1E8E353172B9C0BA6"
+        "OwnerKey" = "8:_C7272BF4A9D24FD39D08ABB04570B03C"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_54602D10025C6F6766454C8F6B75F417"
-        "OwnerKey" = "8:_C7272BF4A9D24FD39D08ABB04570B03C"
+        "OwnerKey" = "8:_F7884CBCC5F6D4C1E8E353172B9C0BA6"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -136,31 +136,7 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_C7272BF4A9D24FD39D08ABB04570B03C"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_502B38277AF62ED70F770D10BD1FD65A"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_F7884CBCC5F6D4C1E8E353172B9C0BA6"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_5909879E9BE44DDB371A14BD798CD400"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_54602D10025C6F6766454C8F6B75F417"
+        "OwnerKey" = "8:_EBEE36C33EDCA5A5ABEBF8285F4E5150"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -172,7 +148,31 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_EBEE36C33EDCA5A5ABEBF8285F4E5150"
+        "OwnerKey" = "8:_54602D10025C6F6766454C8F6B75F417"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_5909879E9BE44DDB371A14BD798CD400"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_F7884CBCC5F6D4C1E8E353172B9C0BA6"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_502B38277AF62ED70F770D10BD1FD65A"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_C7272BF4A9D24FD39D08ABB04570B03C"
         "MsmSig" = "8:_UNDEFINED"
         }
     }
@@ -230,6 +230,14 @@
         "PrivateKeyFile" = "8:"
         "TimeStampServer" = "8:"
         "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:1"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+            }
         }
     }
     "Deployable"
@@ -266,11 +274,6 @@
             "AssemblyAsmDisplayName" = "8:AForge, Version=2.2.5.0, Culture=neutral, PublicKeyToken=c1db6ff4eaa06aeb, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_20E2146C791105F6934C30A65E1458CA"
-                    {
-                    "Name" = "8:AForge.dll"
-                    "Attributes" = "3:512"
-                    }
                 }
             "SourcePath" = "8:AForge.dll"
             "TargetName" = "8:"
@@ -297,11 +300,6 @@
             "AssemblyAsmDisplayName" = "8:AForge.Imaging, Version=2.2.5.0, Culture=neutral, PublicKeyToken=ba8ddea9676ca48b, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_46C8C60227CD93D9A3ADA497BA320E90"
-                    {
-                    "Name" = "8:AForge.Imaging.dll"
-                    "Attributes" = "3:512"
-                    }
                 }
             "SourcePath" = "8:AForge.Imaging.dll"
             "TargetName" = "8:"
@@ -328,11 +326,6 @@
             "AssemblyAsmDisplayName" = "8:Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_502B38277AF62ED70F770D10BD1FD65A"
-                    {
-                    "Name" = "8:Newtonsoft.Json.dll"
-                    "Attributes" = "3:512"
-                    }
                 }
             "SourcePath" = "8:Newtonsoft.Json.dll"
             "TargetName" = "8:"
@@ -359,11 +352,6 @@
             "AssemblyAsmDisplayName" = "8:AForge.Video, Version=2.2.5.0, Culture=neutral, PublicKeyToken=cbfb6e07d173c401, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_54602D10025C6F6766454C8F6B75F417"
-                    {
-                    "Name" = "8:AForge.Video.dll"
-                    "Attributes" = "3:512"
-                    }
                 }
             "SourcePath" = "8:AForge.Video.dll"
             "TargetName" = "8:"
@@ -390,11 +378,6 @@
             "AssemblyAsmDisplayName" = "8:AForge.Controls, Version=2.2.5.0, Culture=neutral, PublicKeyToken=a8ac264d1dc6b9d9, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_5909879E9BE44DDB371A14BD798CD400"
-                    {
-                    "Name" = "8:AForge.Controls.dll"
-                    "Attributes" = "3:512"
-                    }
                 }
             "SourcePath" = "8:AForge.Controls.dll"
             "TargetName" = "8:"
@@ -481,11 +464,6 @@
             "AssemblyAsmDisplayName" = "8:AForge.Math, Version=2.2.5.0, Culture=neutral, PublicKeyToken=abba2e25397ee8c9, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_EBEE36C33EDCA5A5ABEBF8285F4E5150"
-                    {
-                    "Name" = "8:AForge.Math.dll"
-                    "Attributes" = "3:512"
-                    }
                 }
             "SourcePath" = "8:AForge.Math.dll"
             "TargetName" = "8:"
@@ -512,11 +490,6 @@
             "AssemblyAsmDisplayName" = "8:AForge.Video.DirectShow, Version=2.2.5.0, Culture=neutral, PublicKeyToken=61ea4348d43881b7, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_F7884CBCC5F6D4C1E8E353172B9C0BA6"
-                    {
-                    "Name" = "8:AForge.Video.DirectShow.dll"
-                    "Attributes" = "3:512"
-                    }
                 }
             "SourcePath" = "8:AForge.Video.DirectShow.dll"
             "TargetName" = "8:"
@@ -625,15 +598,15 @@
         {
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:FemboyWatchdog"
-        "ProductCode" = "8:{4560E035-D9FD-4A3E-AD0C-0C92F99B2AC7}"
-        "PackageCode" = "8:{7F6425A9-589D-4803-92D1-C7C5D2F61ED5}"
+        "ProductCode" = "8:{75E1E013-157D-4EE1-98A4-AC33CB590ED8}"
+        "PackageCode" = "8:{296803F3-755E-4162-B807-73CF6C07DBEB}"
         "UpgradeCode" = "8:{85E61D1C-4678-4F3E-898C-C62A75112C1A}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
         "RemovePreviousVersions" = "11:TRUE"
         "DetectNewerInstalledVersion" = "11:TRUE"
         "InstallAllUsers" = "11:TRUE"
-        "ProductVersion" = "8:0.3.0"
+        "ProductVersion" = "8:0.4.0"
         "Manufacturer" = "8:FemboyFinancial"
         "ARPHELPTELEPHONE" = "8:+1 (925) 765-8478"
         "ARPHELPLINK" = "8:http://ff.howfeed.biz/"
@@ -1161,7 +1134,7 @@
         {
             "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_C7272BF4A9D24FD39D08ABB04570B03C"
             {
-            "SourcePath" = "8:..\\FemboyWatchdog\\obj\\x86\\Debug\\FemboyWatchdog.exe"
+            "SourcePath" = "8:..\\FemboyWatchdog\\obj\\x86\\Release\\FemboyWatchdog.exe"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_B09D9E8F0A6E4508BA26694479354890"
