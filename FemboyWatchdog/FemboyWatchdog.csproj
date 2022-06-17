@@ -78,6 +78,7 @@
       <HintPath>..\packages\AForge.Video.DirectShow.2.2.5\lib\AForge.Video.DirectShow.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\packages\Newtonsoft.Json.9.0.1\lib\net20\Newtonsoft.Json.dll</HintPath>
       <Private>True</Private>
@@ -111,6 +112,13 @@
       <DependentUpon>MeetingNotification.cs</DependentUpon>
     </Compile>
     <Compile Include="MeetingProvider.cs" />
+    <Compile Include="MemoProvider.cs" />
+    <Compile Include="MemoViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MemoViewer.Designer.cs">
+      <DependentUpon>MemoViewer.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Settings.cs" />
@@ -141,6 +149,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MeetingNotification.resx">
       <DependentUpon>MeetingNotification.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MemoViewer.resx">
+      <DependentUpon>MemoViewer.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

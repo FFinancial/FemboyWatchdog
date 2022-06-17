@@ -70,6 +70,8 @@ namespace FemboyWatchdog
             if (Checking)
                 return;
 
+            _timer_Tick(this, null);
+
             _timer = new Timer();
             _timer.Interval = Convert.ToInt32(_checkInterval * 1000);
             _timer.Tick += new EventHandler(_timer_Tick);
